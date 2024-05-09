@@ -1,0 +1,58 @@
+.advantages {
+    margin: 60px auto 0 auto;
+    max-width: 400px;
+    text-align: center;
+
+    &__title {
+        font-family: DAMN;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 54px;
+
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--text-second);
+
+        span {
+            font-family: DAMN;
+            font-weight: 400;
+            font-size: 60px;
+            color: #8A6857;
+        }
+    }
+
+    &__wrapper {
+        margin: 35px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px
+    }
+
+    &__item {}
+
+    &__item-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    &__item-title {
+        margin: 35px 0 0 0;
+
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 30px;
+        text-align: center;
+        color: var(--text-main);
+    }
+
+    &__item-description {
+        margin: 10px 0 0 0;
+
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: var(--text-main);
+    }
+}
