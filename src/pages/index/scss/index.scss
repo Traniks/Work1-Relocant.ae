@@ -7,3 +7,15 @@
 @import "section/stories";
 @import "section/contacts";
 
+@import "modal/call";
+@import "modal/order";
+@import "modal/messengers";
+@import "modal/tg";
+@import "modal/whatsapp";
+@import "modal/zoom";
+
+main {
+    background: url("../../img/bg-11.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
