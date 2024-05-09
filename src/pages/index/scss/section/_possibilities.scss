@@ -1,6 +1,7 @@
 .possibilities {
     &__title {
-        margin: 40px 0 0 0;
+        margin: 40px auto 0 auto;
+        max-width: 400px;
 
         font-family: DAMN;
         font-size: 60px;
@@ -48,10 +49,12 @@
     }
 
     &__item {
+        margin: 0 auto;
         padding: 22px 0 24px 0;
+        max-width: 400px;
 
         border-radius: 30px;
-        background: rgba(253, 248, 236, 0.8);
+        background: var(--bg-box);
     }
     
     &__item-img {
@@ -87,7 +90,8 @@
     }
 
     &__bottom {
-        margin: 35px 0 0 0;
+        margin: 35px auto 0 auto;
+        max-width: 400px;
 
         font-size: 24px;
         font-weight: 800;

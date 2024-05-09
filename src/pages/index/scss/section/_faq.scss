@@ -21,7 +21,11 @@
 
     &__box {
         position: relative;
+        
+        margin: 0 auto;
         padding: 16px 0 0 0;
+        max-width: 400px;
+
         border-top: 1px solid var(--text-main);
     }
 

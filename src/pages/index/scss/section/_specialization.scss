@@ -1,0 +1,120 @@
+.specialization {
+    margin: 60px 0 0 0;
+
+    &__title {
+        margin: 0 auto;
+        max-width: 400px;
+
+        font-family: DAMN;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 54px;
+
+        text-align: center;
+        text-transform: uppercase;
+        text-wrap: balance;
+
+        color: var(--text-second);
+
+        span {
+            color: #8A6857;
+        }
+    }
+
+    &__wrapper {
+        margin: 34px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__item {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 400px;
+
+        border-radius: 30px;
+        background: var(--bg-box);
+    }
+
+    &__item-title {
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 20px;
+
+        color: var(--text-main);
+    }
+
+    &__item-description {
+        margin: 10px 0 0 0;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__item-img {
+        position: relative;
+        margin: 20px 0 0 0;
+
+        height: 180px;
+
+        border-radius: 25px;
+        background-color: #e5ceae;
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+        }
+    }
+    &__item:nth-child(2) {
+        img {
+            width: 200px;
+        }
+    }
+    &__item:nth-child(3) {
+        img {
+            width: 210px;
+            bottom: -20px;
+        }
+    }
+    &__item:nth-child(4) {
+        img {
+            width: 175px;
+            bottom: -20px;
+        }
+    }
+    &__item:nth-child(5) {
+        img {
+            width: 230px;
+            bottom: -5px;
+        }
+    }
+
+    &__bottom-title {
+        margin: 60px 0 0 0;
+
+        font-family: DAMN;
+        font-size: 50px;
+        font-weight: 400;
+        
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--text-main);
+    }
+
+    &__bottom-description {
+        margin: 10px auto 0 auto;
+
+        max-width: 400px;
+
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        text-align: center;
+
+        color: var(--text-main);
+
+    }
+}

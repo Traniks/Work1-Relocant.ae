@@ -16,7 +16,8 @@
     }
 
     &__country {
-        margin: 26px 0 0 0;
+        margin: 26px auto 0 auto;
+        max-width: 400px;
 
         font-family: DAMN;
         font-weight: 400;
@@ -24,6 +25,7 @@
         font-size: 60px;
 
         text-align: center;
+        text-wrap: balance;
         text-transform: uppercase;
         color: #828282;
     }
@@ -47,7 +49,8 @@
     }
 
     &__wrapper {
-        margin: 64px 0 0 0;
+        margin: 64px auto 0 auto;
+        max-width: 400px;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -145,7 +148,10 @@
     }
 
     &__banner {
+        margin: 55px auto 0 auto;
         padding: 20px 20px 0 20px;
+        max-width: 400px;
+
         border-radius: 30px;
         background: rgba(209, 182, 123, 0.3);
         backdrop-filter: blur(20px);
@@ -217,11 +223,13 @@
     &__banner-img {
         position: relative;
         height: 350px;
+        overflow: hidden;
 
         img {
             position: absolute;
             top: 0;
             left: 0;
+            height: 350px;
         }
     }
 
