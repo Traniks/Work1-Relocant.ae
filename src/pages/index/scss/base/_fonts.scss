@@ -14,6 +14,7 @@ $font-path: '../../fonts/';
     }
 }
 
-@include font-face("Montserrat Alternates", "MontserratAlternates-Regular", 400);
-@include font-face("Montserrat Alternates", "MontserratAlternates-SemiBold", 600);
-@include font-face("Montserrat Alternates", "MontserratAlternates-Bold", 700);
+@include font-face("LeMurmure", "LeMurmure-Regular", 400); // Цифры
+@include font-face("DAMN", "DAMN-Regular", 400); // Главные заголовки
+@include font-face("BebasNeuePro", "BebasNeuePro-Regular", 400); // Текст
+@include font-face("BebasNeuePro", "BebasNeuePro-Bold", 700); // Заголовки текста

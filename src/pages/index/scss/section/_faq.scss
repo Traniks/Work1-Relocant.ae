@@ -1,0 +1,67 @@
+.faq {
+    margin: 40px 0 0 0;
+
+    &__title {
+        font-family: DAMN;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 50px;
+
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--text-second);
+    }
+
+    &__wrapper {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__box {
+        position: relative;
+        padding: 16px 0 0 0;
+        border-top: 1px solid var(--text-main);
+    }
+
+    &__box-img {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        transition: 0.5s;
+
+        &_active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__box-title {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 20px;
+
+        text-transform: uppercase;
+        color: var(--text-main);
+        cursor: pointer;
+    }
+
+    &__box-description {
+        margin: 0 0 0 0;
+
+        max-height: 0;
+        overflow: hidden;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+
+        color: var(--text-main);
+        transition: 0.5s;
+
+        &_active {
+            max-height: 100px;
+            margin: 12px 0 0 0;
+        }
+    }
+}

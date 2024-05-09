@@ -15,7 +15,7 @@
 
     box-sizing: border-box;
 
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "BebasNeuePro", sans-serif;
 }
 
 html {
@@ -37,7 +37,7 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1240px; // Это 1200px + падинги
     padding: 0 20px;
     margin: 0 auto;
 }
