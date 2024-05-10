@@ -27,6 +27,7 @@
         max-width: 400px;
 
         border-top: 1px solid var(--text-main);
+        cursor: pointer;
     }
 
     &__box-img {
@@ -47,7 +48,7 @@
 
         text-transform: uppercase;
         color: var(--text-main);
-        cursor: pointer;
+        // cursor: pointer;
     }
 
     &__box-description {

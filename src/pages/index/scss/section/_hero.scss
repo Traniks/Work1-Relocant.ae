@@ -107,6 +107,7 @@
             color: #5a5050;
             border: none;
             border-radius: 20px;
+            cursor: pointer;
     
             span {
                 font-weight: 400;
@@ -135,15 +136,24 @@
 
     &__button-social {
         margin: 40px 0 0 0;
+        height: 45px;
         display: flex;
         justify-content: center;
-        gap: 15px;
+        align-items: center;
+        gap: 25px;
+        transition: 1s;
         img {
             width: 30px;
             height: 30px;
             padding: 7px;
             border: 1.5px solid #564e4e;
             border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 
@@ -217,6 +227,7 @@
 
             border: none;
             border-radius: 20px;
+            cursor: pointer;
         }
     }
 

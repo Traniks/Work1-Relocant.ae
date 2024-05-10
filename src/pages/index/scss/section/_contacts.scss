@@ -100,6 +100,7 @@
 
     &__item-social {
         margin: 10px 0 0 0;
+        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -111,12 +112,23 @@
             padding: 7px;
             border: 1.5px solid #564e4e;
             border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                width: 50px;
+                height: 50px;
+            }
         }
         img:last-child {
-            width: unset;
-            height: unset;
+            padding: 0;
+            width: 120px;
+            height: 65px;
             border: none;
             border-radius: 0;
+            &:hover {
+                width: 140px;
+                height: 100px;
+            }
         }
     }
 

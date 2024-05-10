@@ -1,4 +1,4 @@
-.modal-tg {
+.modal-ws {
     position: fixed;
     display: none;
     justify-content: center;
@@ -86,7 +86,7 @@
 }
 
 @media(min-width: 768px) {
-    .modal-tg {
+    .modal-ws {
         &__wrapper {
             width: 700px;
         }

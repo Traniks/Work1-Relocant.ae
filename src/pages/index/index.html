@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+		<script>
+			;(function (w, d, s, l, i) {
+				w[l] = w[l] || []
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js',
+				})
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : ''
+				j.async = true
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+				f.parentNode.insertBefore(j, f)
+			})(window, document, 'script', 'dataLayer', 'GTM-K5NXH6RG')
+		</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index/scss/base-and-block.scss">
@@ -18,15 +36,15 @@
                 </a>
 
                 <div class="header__phone">
-                    <img class="header__phone-img" src="icons/phone.svg" alt="phone">
+                    <img class="header__phone-img" src="icons/phone.svg" alt="phone" onclick="document.querySelector('#modal-call').classList.add('modal-call_active');document.body.style.overflow = 'hidden';;openModal();ym(96940764, 'reachGoal', 'button_1'); return true;">
 
                     <div class="header__phone-box">
                         <div class="header__phone-num">
                             <p>+971 50 7</p>
-                            <a href="#">СМОТРЕТЬ</a>
+                            <a href="#" onclick="document.querySelector('#modal-call').classList.add('modal-call_active');document.body.style.overflow = 'hidden';openModal();ym(96940764, 'reachGoal', 'button_1'); return true;">СМОТРЕТЬ</a>
                         </div>
     
-                        <a class="header__phone-call" href="#">Заказать звонок</a>
+                        <a class="header__phone-call" href="#" onclick="document.querySelector('#modal-order').classList.add('modal-order_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_3'); return true;">Заказать звонок</a>
                     </div>
                 </div>
 
@@ -59,13 +77,13 @@
                     <div class="hero__button">
                         <div class="hero__button-wrapper">
                             <img class="hero__button-arrow_right" src="icons/arrow-right.svg" alt="arrow_right">
-                            <button>Напишите нам<br><span>в мессенджере сейчас!</span></button>
+                            <button onclick="document.querySelector('#modal-messengers').classList.add('modal-messengers_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_4'); return true;">Напишите нам<br><span>в мессенджере сейчас!</span></button>
                             <img class="hero__button-arrow_left" src="icons/arrow-left.svg" alt="arrow_left">
                         </div>
 
                         <div class="hero__button-social">
-                            <img src="icons/telegram.svg" alt="telegram">
-                            <img src="icons/whatsapp.svg" alt="whatsapp">
+                            <img src="icons/telegram.svg" alt="telegram" onclick="document.querySelector('#modal-tg').classList.add('modal-tg_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_5'); return true;">
+                            <img src="icons/whatsapp.svg" alt="whatsapp" onclick="document.querySelector('#modal-ws').classList.add('modal-ws_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_6'); return true;">
                         </div>
                     </div>
 
@@ -90,7 +108,7 @@
 
                     <div class="hero__banner-button">
                         <h3>Забронируйте цену сейчас!</h3>
-                        <button>Оформить</button>
+                        <button onclick="document.querySelector('#modal-messengers').classList.add('modal-messengers_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_7'); return true;">Оформить</button>
                     </div>
 
                     <div class="hero__banner-img">
@@ -279,7 +297,7 @@
 
                 <div class="possibilities__button-wrapper">
                     <img class="possibilities__button-arrow_right" src="icons/arrow-right.svg" alt="arrow_right">
-                    <button>Записаться на консультацию</button>
+                    <button onclick="document.querySelector('#modal-messengers').classList.add('modal-messengers_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_8'); return true;">Записаться на консультацию</button>
                     <img class="possibilities__button-arrow_left" src="icons/arrow-left.svg" alt="arrow_left">
                 </div>
 
@@ -429,7 +447,7 @@
                     <div class="services__item">
                         <p>Эти дополнительные услуги созданы, чтобы обеспечить Вас и Вашу семью всем необходимым для комфортного проживания и успешного ведения бизнеса в ОАЭ. Мы стремимся сделать Ваш переход к новой жизни максимально гладким и беззаботным.</p>
                         <p>С каждой дополнительной услугой нужна форма (можно просто кнопки мессенджеров, главное чтобы было понятно, что можно проконсультироваться по каждой услуге)</p>
-                        <button>Записаться на консультацию</button>
+                        <button onclick="document.querySelector('#modal-messengers').classList.add('modal-messengers_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_9'); return true;">Записаться на консультацию</button>
                     </div>
 
                 </div>
@@ -497,7 +515,7 @@
                     <div class="contacts__item">
                         <img class="contacts__item-img" src="icons/contacts-1.svg" alt="point">
                         <h3 class="contacts__item-title">Адрес офиса<br>. . .</h3>
-                        <a class="contacts__item-description" href="https://maps.app.goo.gl/c2JYiuvrcuGyzX4u9">Aspin Commercial Tower, 106 Sheikh Zayed Rd - Trade Centre - Trade Centre 1 – Dubai офис – 2201</a>
+                        <a class="contacts__item-description" href="https://maps.app.goo.gl/c2JYiuvrcuGyzX4u9" target="_blank" onclick="ym(96940764, 'reachGoal', 'button_10'); return true;">Aspin Commercial Tower, 106 Sheikh Zayed Rd - Trade Centre - Trade Centre 1 – Dubai офис – 2201</a>
                     </div>
 
                     <!-- item-2 -->
@@ -507,7 +525,7 @@
 
                         <div class="contacts__item-num">
                             <p>+971 50 7</p>
-                            <a href="#">СМОТРЕТЬ</a>
+                            <a href="#" onclick="openModal(); document.querySelector('#modal-call').classList.add('modal-call_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_11'); return true;">СМОТРЕТЬ</a>
                         </div>
                     </div>
 
@@ -517,9 +535,9 @@
                         <h3 class="contacts__item-title">Мессенджеры:<br>. . .</h3>
 
                         <div class="contacts__item-social">
-                            <img src="icons/telegram.svg" alt="telegram">
-                            <img src="icons/whatsapp.svg" alt="whatsapp">
-                            <img src="icons/zoom.svg" alt="zoom">
+                            <img src="icons/telegram.svg" alt="telegram" onclick="document.querySelector('#modal-tg').classList.add('modal-tg_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_12'); return true;">
+                            <img src="icons/whatsapp.svg" alt="whatsapp" onclick="document.querySelector('#modal-ws').classList.add('modal-ws_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_13'); return true;">
+                            <img src="icons/zoom.svg" alt="zoom" onclick="document.querySelector('#modal-zoom').classList.add('modal-zoom_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'zoom'); return true;">
                         </div>
                     </div>
 
@@ -530,7 +548,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7219.659518939928!2d55.272498!3d25.208963000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428853023db3%3A0x6e63a9fe6b2d7cfe!2sAspin%20Commercial%20Tower%20-%20106%20Sheikh%20Zayed%20Rd%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sru!4v1715271485448!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     <div class="contacts__img">
-                        <img src="img/contacts.png" alt="woman">
+                        <img src="img/contacts.webp" alt="woman">
                     </div>
 
                 </div>
@@ -540,20 +558,282 @@
 
     </main>
 
-    <section class="modal-call">
-        modal-call_
+    <!-- Модалка обычного звонок -->
+    <section class="modal-call" id="modal-call">
+        <div class="container">
+            <div class="modal-call__wrapper">
+                <img class="modal-call__cross" id="modal-call__cross" src="icons/close.svg" alt="cross" onclick="closeModal();">
+
+                <div class="modal-call__content">
+                    <h2 class="modal-call__content-title">Позвоните нам</h2>
+
+                    <div class="modal-call__number">
+                        <a href="tel:971507190519" class="modal-call__telephone" onclick="ym(96940764, 'reachGoal', 'call'); return true;">+971 50 719 0519</a>
+                        <div class="modal-call__bg">+971 50 719 0519</div>
+                        <button class="modal-call__btn" onclick="ym(96940764, 'reachGoal', 'button_15'); return true;">Показать</button>
+                    </div>
+
+                    <form class="modal-call__mail" action="mail.php" method="post">
+
+                        <h3 class="modal-call__mail-title">Или напишите в удобный вам мессенджер</h3>
+                        
+                        <div class="modal-call__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-call__tg" class="modal-call__socials-icon" src="icons/tg.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
+                            </a>
+
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-call__ws" class="modal-call__socials-icon" src="icons/ws.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
+                            </a>
+                        </div>
+
+                        <div class="modal-call__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
     </section>
     
-    <section class="modal-order"></section>
+    <!-- Модалка заказа звонка -->
+    <section class="modal-order" id="modal-order">
+        <div class="container">
+            <div class="modal-order__wrapper">
+                <img class="modal-order__cross" id="modal-order__cross" src="icons/close.svg" alt="cross">
 
-    <section class="modal-messengers"></section>
+                <div class="modal-order__content">
+                    <h2 class="modal-order__title">Введите свой номер телефона и мы свяжемся с вами</h2>
 
-    <section class="modal-tg"></section>
+                    <form class="modal-order__mail" action="mail.php" method="post">
+                        <input placeholder="НОМЕР ТЕЛЕФОНА" name="username" required aria-required="">
 
-    <section class="modal-whatsapp"></section>
+                        <div class="modal-order__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+
+                        <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
+                        <button type="submit" class="modal-order__button" onclick="ym(96940764, 'reachGoal', 'button_18'); return true;">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка мессенджеров -->
+    <section class="modal-messengers" id="modal-messengers">
+        <div class="container">
+            <div class="modal-messengers__wrapper">
+                <img class="modal-messengers__cross" id="modal-messengers__cross" src="icons/close.svg" alt="cross">
+
+                <div class="modal-messengers__content">
+                    <h2 class="modal-messengers__content-title">Напишите нам в удобном мессенджере</h2>
+
+                    <form class="modal-messengers__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-messengers__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-messengers__tg" class="modal-messengers__socials-icon" src="icons/tg.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
+                            </a>
+
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-messengers__ws" class="modal-messengers__socials-icon" src="icons/ws.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
+                            </a>
+                        </div>
+
+                        <div class="modal-messengers__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка телеграмма -->
+    <section class="modal-tg" id="modal-tg">
+        <div class="container">
+            <div class="modal-tg__wrapper">
+                <img class="modal-tg__cross" id="modal-tg__cross" src="icons/close.svg" alt="cross">
+
+                <div class="modal-tg__content">
+                    <h2 class="modal-tg__content-title">Напишите нам в telegram</h2>
+
+                    <form class="modal-tg__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-tg__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-tg__tg" class="modal-tg__socials-icon" src="icons/tg.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
+                            </a>
+                        </div>
+
+                        <div class="modal-tg__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка ватсапа -->
+    <section class="modal-ws" id="modal-ws">
+        <div class="container">
+            <div class="modal-ws__wrapper">
+                <img class="modal-ws__cross" id="modal-ws__cross" src="icons/close.svg" alt="cross">
+
+                <div class="modal-ws__content">
+                    <h2 class="modal-ws__content-title">Напишите нам в whatsapp</h2>
+
+                    <form class="modal-ws__mail" action="mail.php" method="post">
+                        
+                        <div class="modal-ws__socials">
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-ws__ws" class="modal-ws__socials-icon" src="icons/ws.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
+                            </a>
+                        </div>
+
+                        <div class="modal-ws__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
     
-    <section class="modal-zoom"></section>
+    <!-- Модалка зума -->
+    <section class="modal-zoom" id="modal-zoom">
+        <div class="container">
+            <div class="modal-zoom__wrapper">
+                <img class="modal-zoom__cross" id="modal-zoom__cross" src="icons/close.svg" alt="cross">
+
+                <div class="modal-zoom__content">
+                    <h2 class="modal-zoom__title">Введите свой номер телефона и мы свяжемся с вами</h2>
+                    <img class="modal-zoom__img" src="icons/zoom-w.svg" alt="zoom icon" class="modal-zoom">
+
+                    <form class="modal-zoom__mail" action="mail.php" method="post">
+
+                        <div class="modal-zoom__inputs">
+                            <input id="date" type="tel" name="username" required placeholder="Введите телефон">
+
+                            <label class="form-zoom" data-custom-date="">
+                                <div class="custom-input">Введите дату</div>
+                                <input type="date" name="date1" id="date1" min="2024-03-27" required checked value="дд.мм.гггг">
+                            </label>
+
+                            <label class="form-zoom" data-custom-date="">
+                                <div class="custom-input">Введите время</div>
+                                <input type="time" name="date2" id="date2" min="12:00" max="24:00" required>
+                            </label>
+                        </div>
+
+                        <div class="modal-zoom__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+
+                        <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
+                        <button type="submit" class="modal-zoom__button" onclick="ym(96940764, 'reachGoal', 'button_23'); return true;">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="js/index.js"></script>
+
+    <!-- Фикс прокрутки сайта при открытии модального окна -->
+    <script>
+        let scrollPosition = 0; // Глобальная переменная для хранения позиции прокрутки
+
+        function openModal() {
+            scrollPosition = window.pageYOffset; // Сохраняем текущую позицию прокрутки
+            document.body.classList.add('modal-open');
+            // Другие действия для открытия модального окна
+        }
+
+        function closeModal() {
+            document.body.classList.remove('modal-open');
+            // Другие действия для закрытия модального окна
+            window.scrollTo(0, scrollPosition); // Восстанавливаем позицию прокрутки
+        }
+    </script>
+
+    <!-- Фикс формы zoom для ios систем -->
+		<script>
+			const customLabels = document.querySelectorAll('label[data-custom-date]')
+			customLabels.forEach(makeCustomDateLabel)
+
+			function makeCustomDateLabel(label) {
+				const customInput = label.querySelector('.custom-input')
+				const placeholder = customInput.innerText
+
+				const input = label.querySelector('input')
+
+				if (['date', 'time'].includes(input.type) === false) {
+					return
+				}
+
+				input.addEventListener('focus', e => {
+					e.target?.showPicker()
+				})
+				input.addEventListener('change', e => {
+					const value = e.target.value
+					if (value) {
+						label.querySelector('.custom-input').innerText = value
+					} else {
+						label.querySelector('.custom-input').innerText = placeholder
+					}
+				})
+			}
+		</script>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $('.send_mail').on('submit', function () {
+            $.ajax({
+                url: '/mail.php',
+                method: 'post',
+                dataType: 'html',
+                data: $(this).serialize(),
+                success: function (data) {
+                    $('.modal').addClass('hide')
+                    $('.success').removeClass('hide')
+                    ym(96940764,'reachGoal','thanks')
+                    return true
+                },
+            })
+            return false
+        })
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-K5NXH6RG"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
