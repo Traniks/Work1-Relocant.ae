@@ -1,5 +1,5 @@
 .hero {
-    padding: 100px 0 0 0;
+    padding: 110px 0 0 0;
     text-align: center;
     // background: url("../../img/");
 
@@ -7,22 +7,24 @@
     &__title {
         font-weight: 400;
 
-        font-size: 20px;
-        line-height: 20px;
+        font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);
+        // line-height: 20px;
 
         text-align: center;
         text-transform: uppercase;
+        text-wrap: balance;
         color: #495756;
     }
 
     &__country {
-        margin: 26px auto 0 auto;
-        max-width: 400px;
+        margin: 26px auto clamp(0rem, -0.652rem + 3.26vw, 1.875rem) auto;
+        max-width: clamp(25rem, 14.13rem + 54.35vw, 56.25rem);
 
         font-family: DAMN;
         font-weight: 400;
 
-        font-size: 60px;
+        font-size: clamp(3.438rem, 1.372rem + 10.33vw, 9.375rem);
+        line-height: clamp(3.125rem, 1.603rem + 7.61vw, 7.5rem);
 
         text-align: center;
         text-wrap: balance;
@@ -39,7 +41,7 @@
 
         font-weight: 400;
         
-        font-size: 20px;
+        font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);
         line-height: 20px;
 
         text-align: center;
@@ -50,7 +52,7 @@
 
     &__wrapper {
         margin: 64px auto 0 auto;
-        max-width: 400px;
+        max-width: clamp(25rem, 14.13rem + 54.35vw, 56.25rem);
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -143,16 +145,16 @@
         gap: 25px;
         transition: 1s;
         img {
-            width: 30px;
-            height: 30px;
+            width: clamp(1.875rem, 1.658rem + 1.09vw, 2.5rem);
+            height: clamp(1.875rem, 1.658rem + 1.09vw, 2.5rem);
             padding: 7px;
             border: 1.5px solid #564e4e;
             border-radius: 10px;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
-                width: 40px;
-                height: 40px;
+                width: clamp(2.5rem, 2.283rem + 1.09vw, 3.125rem);
+                height: clamp(2.5rem, 2.283rem + 1.09vw, 3.125rem);
             }
         }
     }
@@ -160,11 +162,11 @@
     &__banner {
         margin: 55px auto 0 auto;
         padding: 20px 20px 0 20px;
-        max-width: 400px;
+        max-width: 500px;
 
         border-radius: 30px;
         background: rgba(209, 182, 123, 0.3);
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(4px);
     }
 
     &__banner-content {}
@@ -206,6 +208,7 @@
             font-size: 38px;
             font-weight: 700;
             line-height: 34px;
+            text-wrap: balance;
 
             color: var(--text-second);
         }
@@ -234,14 +237,57 @@
     &__banner-img {
         position: relative;
         height: 350px;
-        overflow: hidden;
+        // overflow: hidden;
 
-        img {
+
+        picture {
             position: absolute;
-            top: 0;
-            left: 0;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             height: 350px;
         }
     }
 
+}
+
+@media(min-width: 1024px) {
+    .hero {
+        &__wrapper {
+            grid-template-columns: repeat(6, 1fr);
+            max-width: unset;
+        }
+        &__button {
+            grid-row: auto;
+            grid-column: 3/5;
+        }
+
+        &__banner {
+            margin: 140px auto 0 auto;
+            max-width: unset;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            align-items: center;
+        }
+
+        &__banner-img {
+            grid-row: 1;
+            height: auto;
+
+            picture {
+                position: absolute;
+                display: block;
+                bottom: clamp(-10.625rem, -15.069rem + 6.94vw, -9.688rem);
+                height: auto;
+                img {
+                    width: 420px;
+                }
+            }
+        }
+        &__banner-content {
+            grid-column: 2;
+        }
+    }
 }

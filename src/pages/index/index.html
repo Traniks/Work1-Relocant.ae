@@ -112,7 +112,14 @@
                     </div>
 
                     <div class="hero__banner-img">
-                        <img class="hero__banner-img" src="img/man.webp" alt="man">
+                        <picture>
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="img/man-big.webp" type="image/webp">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="img/man.webp" type="image/webp">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="img/man.webp" alt="man">
+                        </picture>
                     </div>
                 </div>
 
@@ -129,56 +136,113 @@
 
                     <!-- box-1 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
+
                         <h3 class="faq__box-title">Сколько времени занимает процесс оформления ВНЖ в ОАЭ?</h3>
                         <p class="faq__box-description">В процессе оформления (ВНЖ) в Объединённых Арабских Эмиратах (ОАЭ), обычно требуется около 7 рабочих дней. Этот период времени включает в себя подачу всех необходимых документов и их последующую обработку соответствующими органами. Однако, стоит учитывать, что этот срок является средним и может варьироваться в зависимости от конкретных обстоятельств и требований.</p>
                     </div>
 
                     <!-- box-2 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">Есть ли скрытые платежи при оформлении визы?</h3>
                         <p class="faq__box-description">При оформлении визы скрытых платежей нет. Все необходимые платежи полностью включены в первоначальную стоимость услуги, составляющую 4990 AED. Это обеспечивает прозрачность и понимание всех затрат заранее.</p>
                     </div>
 
                     <!-- box-3 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">Могу ли я спонсировать визы для своей семьи?</h3>
                         <p class="faq__box-description">Да, конечно! Мы предлагаем услугу спонсирования виз для членов вашей семьи. Однако, для того чтобы воспользоваться этой возможностью, вы должны сначала получить Emirates ID. После успешного получения вашего Emirates ID, вы сможете спонсировать визы для своих близких.</p>
                     </div>
 
                     <!-- box-4 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">Сколько стоит оформление резидентской визы в ОАЭ?</h3>
                         <p class="faq__box-description">Оформление резидентской визы в ОАЭ на 1 год стоит 4990 AED "под ключ". Эта цена включает все необходимые услуги и сборы, связанные с процессом получения визы.</p>
                     </div>
 
                     <!-- box-5 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">Что делать, если мою заявку отклонили ранее?</h3>
                         <p class="faq__box-description">Если вашу заявку на визу отклонили ранее, не стоит отчаиваться. Вам следует подавать заявку снова, и мы готовы помочь в этом процессе. Благодаря нашему опыту, мы знаем, как правильно подготовить и подать документы, чтобы максимально минимизировать риск повторного отказа. Мы поможем вам на каждом этапе подачи заявки, чтобы увеличить ваши шансы на успешное получение визы.</p>
                     </div>
 
                     <!-- box-6 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">Где я могу проживать, имея резидентскую визу ОАЭ?</h3>
                         <p class="faq__box-description">С резидентской визой ОАЭ вы можете проживать где угодно в пределах страны, а также за её пределами. Единственное требование — вам необходимо возвращаться в ОАЭ как минимум один раз каждые шесть месяцев, чтобы подтвердить свой резидентский статус. В остальном, нет никаких ограничений на ваше место проживания, предоставляя вам свободу выбора места, которое наилучшим образом соответствует вашим нуждам и предпочтениям.</p>
                     </div>
 
                     <!-- box-7 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">На какой срок выдается резидентская виза ОАЭ?</h3>
                         <p class="faq__box-description">Срок действия резидентской визы в ОАЭ варьируется от 1 года до 10 лет в случае получения так называемой "золотой визы". Также существуют варианты на 2, 3 и 5 лет. Конкретный срок зависит от индивидуальных потребностей и критериев, которые вы удовлетворяете. Возможность выбора срока позволяет гибко подойти к планированию вашего пребывания в стране, исходя из ваших личных и профессиональных обстоятельств.</p>
                     </div>
 
                     <!-- box-8 -->
                     <div class="faq__box">
-                        <img class="faq__box-img" src="icons/arrow-down.svg" alt="arrow_down">
+                        <picture class="faq__box-img">
+                            <!-- Файл webp для экранов шире 1024px -->
+                            <source media="(min-width: 1024px)" srcset="icons/arrow-down-w.svg" type="image/svg+xml">
+                            <!-- Файл webp для всех других экранов -->
+                            <source srcset="icons/arrow-down.svg" type="image/svg+xml">
+                            <!-- Фallback изображение для браузеров, которые не поддерживают формат webp -->
+                            <img src="icons/arrow-down.svg" alt="arrow_down">
+                        </picture>
                         <h3 class="faq__box-title">МОЖЕТ ЛИ БЫТЬ ОТКАЗАНО В ПОЛУЧЕНИИ РЕЗИДЕНТСКОЙ ВИЗЫ ОАЭ?</h3>
                         <p class="faq__box-description">Безусловно, в получении резидентской визы ОАЭ может произойти отказ, однако такие случаи крайне редки. На основе нашего опыта, за время работы мы успешно оформили более 2000 виз, и лишь в одном случае столкнулись с отказом. Этот отказ был вызван тем, что клиент не сообщил о наличии судимости за мелкое хулиганство в своей стране. Поэтому мы настоятельно рекомендуем предоставлять полную и точную информацию при подаче документов на визу, чтобы минимизировать риск отказа.</p>
                     </div>
@@ -205,15 +269,21 @@
                             <!-- item-1 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-1.svg" alt="sandglass">
-                                <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
-                                <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
+                                    <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+                                </div>
                             </div>
                             
                             <!-- item-2 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-2.svg" alt="license">
-                                <h4 class="possibilities__item-title">Получение водительских прав в оаэ:</h4>
-                                <p class="possibilities__item-description">С Emirates ID вы можете пройти процесс получения местных водительских прав.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Получение водительских прав в оаэ:</h4>
+                                    <p class="possibilities__item-description">С Emirates ID вы можете пройти процесс получения местных водительских прав.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,22 +297,31 @@
                             <!-- item-1 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-3.svg" alt="card">
-                                <h4 class="possibilities__item-title">Открытие банковского счета:</h4>
-                                <p class="possibilities__item-description">Emirates ID дает возможность открытия личного банковского счета в местных банках.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Открытие банковского счета:</h4>
+                                    <p class="possibilities__item-description">Emirates ID дает возможность открытия личного банковского счета в местных банках.</p>
+                                </div>
                             </div>
                             
                             <!-- item-2 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-4.svg" alt="rocket">
-                                <h4 class="possibilities__item-title">Запуск вашего бизнеса:</h4>
-                                <p class="possibilities__item-description">Оформление необходимых документов для запуска и ведения собственного бизнеса в ОАЭ.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Запуск вашего бизнеса:</h4>
+                                    <p class="possibilities__item-description">Оформление необходимых документов для запуска и ведения собственного бизнеса в ОАЭ.</p>
+                                </div>
                             </div>
 
                             <!-- item-3 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-5.svg" alt="coins">
-                                <h4 class="possibilities__item-title">Налоговые преимущества:</h4>
-                                <p class="possibilities__item-description">Возможность смены юрисдикции налогообложения на Эмираты, отсутствие налога на дивиденды и возможность получения сертификата налогового резидента для освобождения от налогообложения в стране вашего первоначального проживания.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Налоговые преимущества:</h4>
+                                    <p class="possibilities__item-description">Возможность смены юрисдикции налогообложения на Эмираты, отсутствие налога на дивиденды и возможность получения сертификата налогового резидента для освобождения от налогообложения в стране вашего первоначального проживания.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,15 +335,21 @@
                             <!-- item-1 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-6.svg" alt="house">
-                                <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
-                                <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
+                                    <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+                                </div>
                             </div>
                             
                             <!-- item-2 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-7.svg" alt="academic cap">
-                                <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
-                                <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Проживание в ОАЭ без ограничений по времени:</h4>
+                                    <p class="possibilities__item-description">Emirates ID позволяет вам находиться в стране столько, сколько необходимо без дополнительных условий.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,15 +363,21 @@
                             <!-- item-1 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-8.svg" alt="car">
-                                <h4 class="possibilities__item-title">Покупка автомобиля:</h4>
-                                <p class="possibilities__item-description">Возможность купить машину и зарегистрировать ее на свое имя.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Покупка автомобиля:</h4>
+                                    <p class="possibilities__item-description">Возможность купить машину и зарегистрировать ее на свое имя.</p>
+                                </div>
                             </div>
                             
                             <!-- item-2 -->
                             <div class="possibilities__item">
                                 <img class="possibilities__item-img" src="icons/possibilities-9.svg" alt="shit">
-                                <h4 class="possibilities__item-title">Гарантия конфиденциальности:</h4>
-                                <p class="possibilities__item-description">Не распространение информации о владении недвижимостью и другими активами.</p>
+
+                                <div class="possibilities__item-text">
+                                    <h4 class="possibilities__item-title">Гарантия конфиденциальности:</h4>
+                                    <p class="possibilities__item-description">Не распространение информации о владении недвижимостью и другими активами.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -294,6 +385,8 @@
                 </div>
 
                 <p class="possibilities__bottom"> получите эксклюзивные возможности жизни и бизнеса в ОАЭ с вашим Emirates ID сегодня</p>
+
+                <img class="possibilities__bottom-img" src="icons/arrow-down-long.svg" alt="arrow down">
 
                 <div class="possibilities__button-wrapper">
                     <img class="possibilities__button-arrow_right" src="icons/arrow-right.svg" alt="arrow_right">
@@ -314,8 +407,11 @@
 
                     <!-- item-1 -->
                     <div class="specialization__item">
-                        <h4 class="specialization__item-title">Персонализированная консультация</h4>
-                        <p class="specialization__item-description">Мы начинаем с индивидуальной консультации, чтобы понять Ваши потребности и предоставить четкое представление о процессе получения Emirates ID. На этом этапе мы поможем Вам подготовиться к следующим шагам, обеспечивая полное понимание процедуры.</p>
+                        <div class="specialization__item-text">
+                            <h3 class="specialization__item-title">Персонализированная консультация</h4>
+                            <p class="specialization__item-description">Мы начинаем с индивидуальной консультации, чтобы понять Ваши потребности и предоставить четкое представление о процессе получения Emirates ID. На этом этапе мы поможем Вам подготовиться к следующим шагам, обеспечивая полное понимание процедуры.</p>
+                        </div>
+
                         <div class="specialization__item-img">
                             <img src="img/specialization-1.webp" alt="woman">
                         </div>
@@ -323,8 +419,11 @@
 
                     <!-- item-2 -->
                     <div class="specialization__item">
-                        <h4 class="specialization__item-title">Подготовка и проверка документов</h4>
-                        <p class="specialization__item-description">Наша команда экспертов займется сбором и тщательной проверкой всех необходимых документов для вашего заявления на Emirates ID, включая профессиональный перевод и заверение документов.</p>
+                        <div class="specialization__item-text">                            
+                            <h3 class="specialization__item-title">Подготовка и проверка документов</h4>
+                            <p class="specialization__item-description">Наша команда экспертов займется сбором и тщательной проверкой всех необходимых документов для вашего заявления на Emirates ID, включая профессиональный перевод и заверение документов.</p>
+                        </div>
+
                         <div class="specialization__item-img">
                             <img src="img/specialization-2.webp" alt="documentation">
                         </div>
@@ -332,8 +431,11 @@
 
                     <!-- item-3 -->
                     <div class="specialization__item">
-                        <h4 class="specialization__item-title">Оформление и подача заявления</h4>
-                        <p class="specialization__item-description">Мы берем на себя всю бюрократию, связанную с оформлением и подачей вашего заявления для Emirates ID. Это включает в себя взаимодействие с государственными органами и обеспечение того, чтобы ваше заявление было обработано без задержек.</p>
+                        <div class="specialization__item-text">
+                            <h3 class="specialization__item-title">Оформление и подача заявления</h4>
+                            <p class="specialization__item-description">Мы берем на себя всю бюрократию, связанную с оформлением и подачей вашего заявления для Emirates ID. Это включает в себя взаимодействие с государственными органами и обеспечение того, чтобы ваше заявление было обработано без задержек.</p>
+                        </div>
+
                         <div class="specialization__item-img">
                             <img src="img/specialization-3.webp" alt="statements">
                         </div>
@@ -341,8 +443,11 @@
 
                     <!-- item-4 -->
                     <div class="specialization__item">
-                        <h4 class="specialization__item-title">Медицинское обследование и отпечатки пальцев</h4>
-                        <p class="specialization__item-description">Мы организуем и сопровождаем процесс прохождения медицинского обследования и сдачи отпечатков пальцев, гарантируя, что все проходит гладко и без лишних хлопот.</p>
+                        <div class="specialization__item-text">
+                            <h3 class="specialization__item-title">Медицинское обследование и отпечатки пальцев</h4>
+                            <p class="specialization__item-description">Мы организуем и сопровождаем процесс прохождения медицинского обследования и сдачи отпечатков пальцев, гарантируя, что все проходит гладко и без лишних хлопот.</p>
+                        </div>
+                        
                         <div class="specialization__item-img">
                             <img src="img/specialization-4.webp" alt="survey">
                         </div>
@@ -350,8 +455,11 @@
 
                     <!-- item-5 -->
                     <div class="specialization__item">
-                        <h4 class="specialization__item-title">Получение Emirates ID</h4>
-                        <p class="specialization__item-description">Наша команда экспертов займется сбором и тщательной проверкой всех необходимых документов для вашего заявления на Emirates ID, включая профессиональный перевод и заверение документов.</p>
+                        <div class="specialization__item-text">
+                            <h3 class="specialization__item-title">Получение Emirates ID</h4>
+                            <p class="specialization__item-description">Наша команда экспертов займется сбором и тщательной проверкой всех необходимых документов для вашего заявления на Emirates ID, включая профессиональный перевод и заверение документов.</p>
+                        </div>
+                        
                         <div class="specialization__item-img">
                             <img src="img/specialization-5.webp" alt="emirates id">
                         </div>
@@ -545,7 +653,7 @@
 
                 <div class="contacts__wrapper-2">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7219.659518939928!2d55.272498!3d25.208963000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428853023db3%3A0x6e63a9fe6b2d7cfe!2sAspin%20Commercial%20Tower%20-%20106%20Sheikh%20Zayed%20Rd%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sru!4v1715271485448!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7219.659518939928!2d55.272498!3d25.208963000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428853023db3%3A0x6e63a9fe6b2d7cfe!2sAspin%20Commercial%20Tower%20-%20106%20Sheikh%20Zayed%20Rd%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sru!4v1715271485448!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
 
                     <div class="contacts__img">
                         <img src="img/contacts.webp" alt="woman">

@@ -1,14 +1,15 @@
 .advantages {
     margin: 60px auto 0 auto;
-    max-width: 400px;
     text-align: center;
 
     &__title {
         font-family: DAMN;
-        font-size: 60px;
+        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         font-weight: 400;
-        line-height: 54px;
+        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
 
+        max-width: 600px;
+        margin: 0 auto;
         text-align: center;
         text-transform: uppercase;
         color: var(--text-second);
@@ -16,13 +17,13 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: 60px;
+            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
             color: #8A6857;
         }
     }
 
     &__wrapper {
-        margin: 35px 0 0 0;
+        margin: clamp(2.188rem, 1.427rem + 3.8vw, 4.375rem) 0 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,7 +38,7 @@
     &__item-title {
         margin: 35px 0 0 0;
 
-        font-size: 30px;
+        font-size: clamp(1.875rem, 1.658rem + 1.09vw, 2.5rem);
         font-weight: 800;
         line-height: 30px;
         text-align: center;
@@ -52,5 +53,17 @@
         line-height: 30px;
         text-align: center;
         color: var(--text-main);
+    }
+}
+
+@media(min-width: 1024px) {
+    .advantages {
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: start;
+            gap: 30px;
+        }
     }
 }

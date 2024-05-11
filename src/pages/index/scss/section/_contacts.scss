@@ -1,13 +1,20 @@
 .contacts {
-    margin: 60px auto 0 auto;
-    max-width: 400px;
+    // margin: 60px auto 60px auto;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    // max-width: 400px;
     text-align: center;
+    // background: url("../../img/bg-44.png");
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
 
     &__title {
         font-family: DAMN;
-        font-size: 60px;
+        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         font-weight: 400;
-        line-height: 54px;
+        max-width: 600px;
+        margin: clamp(1.5rem, -0.152rem + 8.26vw, 6.25rem) auto 0 auto;
+        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -16,7 +23,7 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: 60px;
+            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
             color: #8A6857;
         }
     }
@@ -24,7 +31,8 @@
     &__wrapper-1 {
         display: flex;
         flex-direction: column;
-        margin: 100px 0 0 0;
+        max-width: 380px;
+        margin: 100px auto 0 auto;
         padding: 80px 0 20px 0;
 
         border-radius: 30px 30px 0 0;
@@ -133,8 +141,9 @@
     }
 
     &__wrapper-2 {
-        margin: 0 0 60px 0;
+        margin: 0 auto 60px auto;
         display: flex;
+        max-width: 380px;
         flex-direction: column;
         border-radius: 0 0 30px 30px;
     
@@ -152,8 +161,52 @@
         img {
             position: absolute;
             width: 100%;
+            max-width: 400px;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 0;
-            left: 0;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .contacts {
+        background: url("../../img/bg-44.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        &__wrapper-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background: #00000000;
+            max-width: unset;
+            gap: 30px;
+            padding: 80px 0 0 0;
+        }
+        &__item {
+            background: var(--bg-box);
+            padding: 90px 30px 30px 30px;
+            border-radius: 30px;
+        }
+        &__item-img {
+            top: -60px;
+        }
+        &__wrapper-2 {
+            margin: 45px 0 0 0;
+            border-radius: 30px;
+            background: #00000000;
+            max-width: unset;
+
+            iframe {
+                border-radius: 30px;
+            }
+        }
+        &__img {
+            height: 0;
+
+            img {
+                max-width: 540px;
+                left: 75%;
+            }
         }
     }
 }

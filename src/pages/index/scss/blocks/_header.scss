@@ -14,7 +14,7 @@
     }
 
     &__logo {
-        width: 100px;
+        width: clamp(6.25rem, 4.728rem + 7.61vw, 10.625rem);
     }
 
     &__logo-img {
@@ -28,7 +28,7 @@
     }
 
     &__phone-img {
-        width: 40px;
+        width: clamp(2.5rem, 2.065rem + 2.17vw, 3.75rem);
         cursor: pointer;
     }
 
@@ -40,7 +40,7 @@
     
     &__phone-call {
         text-align: end;
-        font-size: 16px;
+        font-size: clamp(1rem, 0.913rem + 0.43vw, 1.25rem);
     }
 
     &__phone-num {
@@ -50,7 +50,7 @@
         align-items: center;
         gap: 5px;
 
-        font-size: 16px;
+        font-size: clamp(1rem, 0.826rem + 0.87vw, 1.5rem);
 
         p {
             color: var(--text-second);
