@@ -88,6 +88,35 @@
             border: none;
             border-radius: 20px;
             cursor: pointer;
+
+            transition: 0.3s;
+            // overflow: hidden;
+        
+            &:before {
+                content: "";
+                position: absolute;
+        
+                width: 60px;
+                height: 60px;
+        
+                left: 15px;
+                top: -15px;
+                transform: translate(-50%);
+        
+                mix-blend-mode: plus-lighter;
+                transition: 0.3s;
+        
+                background-image: url("../../icons/flash.svg");
+                background-size: 100%;
+            }
+        
+            &:hover {
+                background-color: #ff8f05;
+        
+                &:before {
+                    transform: translate(50%);
+                }
+            }
         }
     }
 

@@ -1,3 +1,7 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @import "section/hero";
 @import "section/faq";
 @import "section/possibilities";
@@ -13,6 +17,7 @@
 @import "modal/tg";
 @import "modal/ws";
 @import "modal/zoom";
+
 
 main {
     background: url("../img/bg-1.webp");

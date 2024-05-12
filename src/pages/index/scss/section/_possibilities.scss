@@ -146,19 +146,35 @@
                 font-weight: 400;
                 font-size: 20px;
             }
-        }
 
-        button:before {
-            // FIXME: Блик на кнопке
-            // content: "";
-            position: absolute;
-            width: 160px;
-            height: 160px;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            left: 0;
-            top: 0;
-            background-image: url("../../icons/flash.svg");
+            transition: 0.3s;
+            // overflow: hidden;
+
+            &:before {
+                content: "";
+                position: absolute;
+
+                width: 60px;
+                height: 60px;
+
+                left: 15px;
+                top: -15px;
+                transform: translate(-50%);
+
+                mix-blend-mode: plus-lighter;
+                transition: 0.3s;
+
+                background-image: url("../../icons/flash.svg");
+                background-size: 100%;
+            }
+
+            &:hover {
+                background-color: #ff8f05;
+
+                &:before {
+                    transform: translate(50%);
+                }
+            }
         }
     }
 
