@@ -115,16 +115,16 @@
         gap: 15px;
 
         img {
-            width: 40px;
-            height: 40px;
-            padding: 7px;
-            border: 1.5px solid #564e4e;
-            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            // padding: 7px;
+            // border: 1.5px solid #564e4e;
+            // border-radius: 10px;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
         }
         img:last-child {

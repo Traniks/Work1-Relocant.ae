@@ -154,23 +154,23 @@
 
     &__button-social {
         margin: 40px 0 0 0;
-        height: 45px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 25px;
         transition: 1s;
         img {
-            width: clamp(1.875rem, 1.658rem + 1.09vw, 2.5rem);
-            height: clamp(1.875rem, 1.658rem + 1.09vw, 2.5rem);
-            padding: 7px;
-            border: 1.5px solid #564e4e;
-            border-radius: 10px;
+            width: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
+            height: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
+            // padding: 7px;
+            // border: 1.5px solid #564e4e;
+            // border-radius: 10px;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
-                width: clamp(2.5rem, 2.283rem + 1.09vw, 3.125rem);
-                height: clamp(2.5rem, 2.283rem + 1.09vw, 3.125rem);
+                width: clamp(3.125rem, 2.898rem + 1.14vw, 3.75rem);
+                height: clamp(3.125rem, 2.898rem + 1.14vw, 3.75rem);
             }
         }
     }
