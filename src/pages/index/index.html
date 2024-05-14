@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!-- Google Tag Manager -->
 		<script>
@@ -20,9 +20,16 @@
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
+
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт релокации в OAЭ">
     <link rel="stylesheet" href="../index/scss/base-and-block.scss">
     <link rel="stylesheet" href="scss/index.scss">
+    <!-- optimization - всегда должен подключаться последним (он удаляется при полной загрузке сайта и перебивает стили)-->
+    <link rel="stylesheet" href="scss/optimization.scss">
     <title>Relocant</title>
 </head>
 <body>
@@ -56,11 +63,21 @@
 
         <!-- section-1 - Главная -->
         <section class="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__bg2"></div>
+
             <div class="container">
-                
-                <h1 class="hero__title">Резидентская виза всего за 7 дней</h1>
-                <h2 class="hero__country">Объединённые Арабские Эмираты</h2>
-                <h2 class="hero__subtitle">Оформим или продлим резидентскую визу в ОАЭ ОТ 1 ГОДА ДО 10 ЛЕТ</h2>
+                <h1 class="hero__title">Резидентская виза<br>всего за 7 дней</h1>
+            </div>
+
+            <div class="container container-title">
+                <div class="hero__country">
+                    <h2>Объединённые<br>Арабские Эмираты</h2>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h2 class="hero__subtitle">Оформим или продлим<br> резидентскую визу в ОАЭ ОТ 1 ГОДА ДО 10 ЛЕТ</h2>
 
                 <div class="hero__wrapper">
 
@@ -102,12 +119,12 @@
                 <div class="hero__banner">
                     <div class="hero__banner-content">
                         <p class="hero__banner-text">До <span id="dateNum">21.02</span></p>
-                        <p class="hero__banner-description">оформите или продлите визу в ОАЭ всего от</p>
+                        <p class="hero__banner-description">оформите или продлите<br> визу в ОАЭ всего от</p>
                         <p class="hero__banner-text" id="promotion-vault"><span>4900</span> AED</p>
                     </div>
 
                     <div class="hero__banner-button">
-                        <h3>Забронируйте цену сейчас!</h3>
+                        <h3>Забронируйте цену<br>сейчас!</h3>
                         <button onclick="document.querySelector('#modal-messengers').classList.add('modal-messengers_active');document.body.style.overflow = 'hidden';ym(96940764, 'reachGoal', 'button_7'); return true;">Оформить</button>
                     </div>
 
@@ -567,7 +584,7 @@
         <section class="advantages">
             <div class="container">
 
-                <h2 class="advantages__title"><span>Почему</span> нас выбирают</h2>
+                <h2 class="advantages__title"><span>Почему</span><br>нас выбирают</h2>
 
                 <div class="advantages__wrapper">
 
@@ -617,7 +634,7 @@
                             <div class="swiper-slide__iphone">
                                 <div class="swiper-slide__screen">
                                     <div class="swiper-slide__notch"></div>
-                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/nrqnvJCwilg" title="отзыв 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/nrqnvJCwilg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -626,7 +643,7 @@
                             <div class="swiper-slide__iphone">
                                 <div class="swiper-slide__screen">
                                     <div class="swiper-slide__notch"></div>
-                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/OP5Mw_Lyhdg" title="отзыв 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/OP5Mw_Lyhdg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -635,7 +652,7 @@
                             <div class="swiper-slide__iphone">
                                 <div class="swiper-slide__screen">
                                     <div class="swiper-slide__notch"></div>
-                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/j4UJfT07GfA" title="отзыв 3"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/j4UJfT07GfA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -644,7 +661,7 @@
                             <div class="swiper-slide__iphone">
                                 <div class="swiper-slide__screen">
                                     <div class="swiper-slide__notch"></div>
-                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/ALCJ-0OcU-U" title="отзыв 4"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/ALCJ-0OcU-U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -653,7 +670,7 @@
                             <div class="swiper-slide__iphone">
                                 <div class="swiper-slide__screen">
                                     <div class="swiper-slide__notch"></div>
-                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/_cIWS84dB2A" title="отзыв 2"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
+                                    <iframe class="lazy entered loading" width="320" height="610" src="https://www.youtube.com/embed/_cIWS84dB2A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ll-status="loading"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -903,12 +920,12 @@
 
                             <label class="form-zoom" data-custom-date="">
                                 <div class="custom-input">Введите дату</div>
-                                <input type="date" name="date1" id="date1" min="2024-03-27" required checked value="дд.мм.гггг">
+                                <input type="date" name="date1" id="date1" min="2024-03-27" required>
                             </label>
 
                             <label class="form-zoom" data-custom-date="">
                                 <div class="custom-input">Введите время</div>
-                                <input type="time" name="date2" id="date2" min="12:00" max="24:00" required>
+                                <input type="time" name="date2" id="date2" min="12:00" max="23:00" required>
                             </label>
                         </div>
 

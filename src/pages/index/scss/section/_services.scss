@@ -1,8 +1,5 @@
 .services {
     margin: clamp(1.5rem, -0.152rem + 8.26vw, 6.25rem) auto 0 auto;
-    // background: url("../../img/bg-33.png");
-    // background-repeat: no-repeat;
-    // background-size: 100% 100%;
     
     &__title {
         font-family: DAMN;
@@ -54,7 +51,7 @@
         width: 100%;
         border-radius: 30px;
         background: var(--bg-box);
-        max-width: 380px;
+        max-width: 300px;
     }
 
     &__item:last-child {
@@ -143,9 +140,9 @@
             width: 85px;
             height: 150px;
 
-            font-family: Le Murmure;
+            font-family: LeMurmure;
 
-            font-size: 145px;
+            font-size: 115px;
             font-weight: 600;
             line-height: 152px;
 
@@ -180,7 +177,7 @@
 
 @media(min-width: 1024px) {
     .services {
-        background: url("../../img/bg-33.webp");
+        background: url("../../img//lite/bg-33.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
 

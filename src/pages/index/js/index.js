@@ -8,4 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     faq();
     modal();
     slider();
+
+    var links = document.head.querySelectorAll('link')
+    var lastLink = links[links.length - 1]
+
+    // Удаляем последний элемент <link> из <head>
+    lastLink.parentNode.removeChild(lastLink)
 })

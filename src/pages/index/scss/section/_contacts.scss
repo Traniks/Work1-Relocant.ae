@@ -1,12 +1,7 @@
 .contacts {
-    // margin: 60px auto 60px auto;
     margin: 0 auto;
     padding: 60px 0 60px 0;
-    // max-width: 400px;
     text-align: center;
-    // background: url("../../img/bg-44.png");
-    // background-repeat: no-repeat;
-    // background-size: 100% 100%;
 
     &__title {
         font-family: DAMN;
@@ -31,7 +26,7 @@
     &__wrapper-1 {
         display: flex;
         flex-direction: column;
-        max-width: 380px;
+        max-width: 300px;
         margin: 100px auto 0 auto;
         padding: 80px 0 20px 0;
 
@@ -143,7 +138,7 @@
     &__wrapper-2 {
         margin: 0 auto 60px auto;
         display: flex;
-        max-width: 380px;
+        max-width: 300px;
         flex-direction: column;
         border-radius: 0 0 30px 30px;
     
@@ -171,7 +166,7 @@
 
 @media(min-width: 1024px) {
     .contacts {
-        background: url("../../img/bg-44.webp");
+        background: url("../../img//lite/bg-44.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         &__wrapper-1 {
@@ -189,6 +184,9 @@
         }
         &__item-img {
             top: -60px;
+        }
+        &__wrapper-1 {
+            margin: 20px auto 0 auto;
         }
         &__wrapper-2 {
             margin: 45px 0 0 0;

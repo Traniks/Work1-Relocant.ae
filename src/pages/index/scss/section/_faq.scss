@@ -1,10 +1,11 @@
 .faq {
-    margin: 40px 0 0 0;
+    // margin: 40px 0 0 0;
 
     &__title {
         font-family: DAMN;
         font-weight: 400;
-        font-size: 60px;
+        margin: 0 auto 0 auto;
+        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         // line-height: 50px;
 
         text-align: center;
@@ -24,7 +25,7 @@
         
         margin: 0 auto;
         padding: 16px 0 0 0;
-        max-width: 500px;
+        max-width: 300px;
 
         border-top: 1px solid var(--text-main);
         cursor: pointer;
@@ -68,7 +69,7 @@
         transition: 0.5s;
 
         &_active {
-            max-height: 200px;
+            max-height: 400px;
             margin: 12px 0 0 0;
         }
     }

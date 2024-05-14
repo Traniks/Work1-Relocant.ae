@@ -30,6 +30,10 @@
         gap: 35px
     }
 
+    &__item {
+        max-width: 300px;
+    }
+
     &__item-img {
         width: 120px;
         height: 120px;

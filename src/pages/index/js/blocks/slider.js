@@ -35,4 +35,18 @@ export function slider() {
 			},
 		},
 	})
+
+	// Функция для установки значения num в зависимости от размера экрана
+	function setNum() {
+		if (window.innerWidth > 1200) {
+			swiperDescription.slideTo(1);
+		} else {
+			swiperDescription.slideTo(0);
+		}
+	}
+
+	// Вызываем функцию при загрузке страницы
+	window.addEventListener('load', setNum);
+	// Вызываем функцию при изменении размера окна
+	window.addEventListener('resize', setNum);
 }

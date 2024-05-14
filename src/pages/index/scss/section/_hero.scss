@@ -1,14 +1,16 @@
 .hero {
-    padding: 110px 0 0 0;
+    padding: 90px 0 clamp(2.5rem, 1.196rem + 6.52vw, 6.25rem) 0;
     text-align: center;
-    // background: url("../../img/");
-
+    background: url("../../img/lite/bg-1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
 
     &__title {
         font-weight: 400;
 
-        font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);
-        // line-height: 20px;
+        font-size: clamp(1.375rem, 1.201rem + 0.87vw, 1.875rem);
+        line-height: clamp(1.375rem, 1.245rem + 0.65vw, 1.75rem);
+        letter-spacing: 3px;
 
         text-align: center;
         text-transform: uppercase;
@@ -17,14 +19,16 @@
     }
 
     &__country {
-        margin: 26px auto clamp(0rem, -0.652rem + 3.26vw, 1.875rem) auto;
-        max-width: clamp(25rem, 14.13rem + 54.35vw, 56.25rem);
-
-        font-family: DAMN;
-        font-weight: 400;
-
-        font-size: clamp(3.438rem, 1.372rem + 10.33vw, 9.375rem);
-        line-height: clamp(3.125rem, 1.603rem + 7.61vw, 7.5rem);
+        margin: 26px auto 0 auto;
+        position: relative;
+        h2 {
+            font-family: DAMN;
+            font-weight: 400;
+    
+            font-size: clamp(3.438rem, 0.111rem + 16.63vw, 13rem);
+            line-height: clamp(3.125rem, 0.082rem + 15.22vw, 11.875rem);
+            letter-spacing: clamp(0rem, -0.065rem + 0.33vw, 0.188rem);
+        }
 
         text-align: center;
         text-wrap: balance;
@@ -40,9 +44,10 @@
         white-space: pre-wrap;
 
         font-weight: 400;
+        letter-spacing: clamp(0rem, -0.065rem + 0.33vw, 0.188rem);
         
-        font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);
-        line-height: 20px;
+        font-size: clamp(1.375rem, 1.158rem + 1.09vw, 2rem);
+        line-height: clamp(1.5rem, 1.239rem + 1.3vw, 2.25rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -51,7 +56,7 @@
     }
 
     &__wrapper {
-        margin: 64px auto 0 auto;
+        margin: 25px auto 0 auto;
         max-width: clamp(25rem, 14.13rem + 54.35vw, 56.25rem);
 
         display: grid;
@@ -75,13 +80,14 @@
     }
 
     &__box-text {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 400;
         line-height: 25px;
 
         text-align: center;
 
         color: #404a46;
+        color: #000;
     }
 
     &__button {
@@ -100,7 +106,7 @@
             height: 100px;
             position: relative;
     
-            font-size: 30px;
+            font-size: clamp(1.375rem, 1.201rem + 0.87vw, 1.875rem);
             font-weight: 800;
             line-height: 20px;
     
@@ -124,8 +130,8 @@
                 content: "";
                 position: absolute;
                 
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 
                 left: 15px;
                 top: -15px;
@@ -134,8 +140,10 @@
                 mix-blend-mode: plus-lighter;
                 transition: 0.3s;
                 
-                background-image: url("../../icons/flash.svg");
+                background-image: url("../../icons/flash1.svg");
+                background-repeat: no-repeat;
                 background-size: 100%;
+                opacity: 0.35;
             }
             &:hover {
                 background-color: #ff8f05;
@@ -153,7 +161,7 @@
     }
 
     &__button-social {
-        margin: 40px 0 0 0;
+        margin: 15px 0 0 0;
         height: 60px;
         display: flex;
         justify-content: center;
@@ -178,14 +186,19 @@
     &__banner {
         margin: 55px auto 0 auto;
         padding: 20px 20px 0 20px;
-        max-width: 500px;
+        max-width: 300px;
 
         border-radius: 30px;
-        background: rgba(209, 182, 123, 0.3);
-        // backdrop-filter: blur(4px);
+        background: #dfc69e;
+        backdrop-filter: blur(5px);
     }
 
-    &__banner-content {}
+    &__banner-content {
+        p:last-child {
+            margin: 20px 0 0 0;
+        }
+        // text-align: start;
+    }
 
     &__banner-text {
         font-family: DAMN;
@@ -199,7 +212,7 @@
 
         span {
             font-family: DAMN;
-            font-size: 126px;
+            font-size: 144px;
             font-weight: 400;
             // line-height: 160px;
             
@@ -211,10 +224,14 @@
     }
 
     &__banner-description {
-        font-size: 26px;
+        display: block;
+        font-size: clamp(1.875rem, 1.745rem + 0.65vw, 2.25rem);
+        margin: 0 auto;
+        max-width: 300px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 30px;
         // text-align: left;
+        // text-align: start;
 
         color: var(--text-second);
     }
@@ -225,11 +242,12 @@
             font-weight: 700;
             line-height: 34px;
             text-wrap: balance;
+            text-transform: uppercase;
 
             color: var(--text-second);
         }
         button {
-            margin: 20px 0 0 0;
+            margin: clamp(1.25rem, 0.924rem + 1.63vw, 2.188rem) 0 0 0;
             position: relative;
 
             width: 240px;
@@ -255,8 +273,8 @@
                 content: "";
                 position: absolute;
 
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
 
                 left: 15px;
                 top: -15px;
@@ -265,8 +283,10 @@
                 mix-blend-mode: plus-lighter;
                 transition: 0.3s;
 
-                background-image: url("../../icons/flash.svg");
+                background-image: url("../../icons/flash1.svg");
+                background-repeat: no-repeat;
                 background-size: 100%;
+                opacity: 0.35;
             }
 
             &:hover {
@@ -299,6 +319,56 @@
 
 @media(min-width: 1024px) {
     .hero {
+        background: none;
+        // background: url("../../img/town-bg.png");
+        // background: url("../../img/town-bg.png"), url("../../img/sky.png");
+        background-repeat: no-repeat;
+        background-size: 100% 115%;
+        position: relative;
+        z-index: 1;
+        &__bg {
+            background: url("../../img/sky.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+        &__bg2 {
+            background: url("../../img/town-bg.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 160%;
+            // background-position: 50% 50%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 4;
+        }
+        .container-title {
+            position: relative;
+            top: 0;
+            z-index: 3 !important;
+        }
+        .container {
+            position: relative;
+            top: 0;
+            z-index: 4;
+        }
+        &__country {
+            height: clamp(19.625rem, 0.069rem + 30.56vw, 23.75rem);
+            h2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                // left: 50%;
+                // transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
         &__wrapper {
             grid-template-columns: repeat(6, 1fr);
             max-width: unset;
@@ -309,12 +379,25 @@
         }
 
         &__banner {
-            margin: 140px auto 0 auto;
+            margin: 150px auto 0 auto;
             max-width: unset;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
             align-items: center;
+            // gap: 50px;
+
+            background-color: #e4cdadce;
+            // background-color: #E1CDB0;
+
+            backdrop-filter: blur(20px);
+        }
+        &__banner-content {
+            text-align: start;
+            margin: 0 0 0 50px;
+        }
+        &__banner-description {
+            margin: 0 0;
         }
 
         &__banner-img {
@@ -324,10 +407,10 @@
             picture {
                 position: absolute;
                 display: block;
-                bottom: clamp(-10.625rem, -15.069rem + 6.94vw, -9.688rem);
+                bottom: -195px;
                 height: auto;
                 img {
-                    width: 420px;
+                    width: 500px;
                 }
             }
         }
