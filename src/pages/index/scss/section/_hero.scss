@@ -125,7 +125,6 @@
             }
 
             transition: 0.3s;
-            // overflow: hidden;
             &:before {            
                 content: "";
                 position: absolute;
@@ -171,9 +170,6 @@
         img {
             width: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
             height: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
-            // padding: 7px;
-            // border: 1.5px solid #564e4e;
-            // border-radius: 10px;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
@@ -197,14 +193,12 @@
         p:last-child {
             margin: 20px 0 0 0;
         }
-        // text-align: start;
     }
 
     &__banner-text {
         font-family: DAMN;
         font-size: 60px;
         font-weight: 400;
-        // line-height: 66px;
         
         text-transform: uppercase;
 
@@ -214,7 +208,6 @@
             font-family: DAMN;
             font-size: 144px;
             font-weight: 400;
-            // line-height: 160px;
             
             background: linear-gradient(180deg, #f9c78b, #fff48c);
             -webkit-background-clip: text;
@@ -230,8 +223,6 @@
         max-width: 300px;
         font-weight: 400;
         line-height: 30px;
-        // text-align: left;
-        // text-align: start;
 
         color: var(--text-second);
     }
@@ -267,7 +258,6 @@
             cursor: pointer;
 
             transition: 0.3s;
-            // overflow: hidden;
 
             &:before {
                 content: "";
@@ -302,7 +292,6 @@
     &__banner-img {
         position: relative;
         height: 350px;
-        // overflow: hidden;
 
 
         picture {
@@ -320,8 +309,6 @@
 @media(min-width: 1024px) {
     .hero {
         background: none;
-        // background: url("../../img/town-bg.png");
-        // background: url("../../img/town-bg.png"), url("../../img/sky.png");
         background-repeat: no-repeat;
         background-size: 100% 115%;
         position: relative;
@@ -340,7 +327,6 @@
             background: url("../../img/town-bg.webp");
             background-repeat: no-repeat;
             background-size: 100% 160%;
-            // background-position: 50% 50%;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -364,8 +350,6 @@
                 top: 0;
                 left: 0;
                 right: 0;
-                // left: 50%;
-                // transform: translateX(-50%);
                 z-index: 1;
             }
         }
@@ -385,10 +369,8 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
             align-items: center;
-            // gap: 50px;
 
             background-color: #e4cdadce;
-            // background-color: #E1CDB0;
 
             backdrop-filter: blur(20px);
         }

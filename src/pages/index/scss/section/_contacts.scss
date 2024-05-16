@@ -5,11 +5,13 @@
 
     &__title {
         font-family: DAMN;
-        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
+
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
         font-weight: 400;
-        max-width: 600px;
+        max-width: 300px;
         margin: 0 auto 0 auto;
-        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -18,7 +20,10 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
+
+            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
             color: #8A6857;
         }
     }
@@ -52,8 +57,6 @@
     }
 
     &__item-title {
-        // margin: 35px 0 0 0;
-
         font-size: 30px;
         font-weight: 800;
         line-height: 30px;
@@ -112,9 +115,6 @@
         img {
             width: 50px;
             height: 50px;
-            // padding: 7px;
-            // border: 1.5px solid #564e4e;
-            // border-radius: 10px;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
@@ -152,7 +152,7 @@
 
     &__img {
         position: relative;
-        height: 260px;
+        height: 200px;
         img {
             position: absolute;
             width: 100%;
@@ -169,6 +169,15 @@
         background: url("../../img//lite/bg-44.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        &__title {
+            max-width: unset;
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
         &__wrapper-1 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

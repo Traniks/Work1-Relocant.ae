@@ -3,12 +3,13 @@
     
     &__title {
         font-family: DAMN;
-        max-width: 600px;
+        max-width: 300px;
         margin: 0 auto;
 
-        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         font-weight: 400;
-        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
+
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -19,31 +20,31 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
+
+            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
             color: #8A6857;
         }
     }
 
     &__subtitle {
-        margin: 20px 0 0 0;
+        margin: 20px auto 0 auto;
 
         font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);;
         font-weight: 800;
         line-height: clamp(1.5rem, 1.37rem + 0.65vw, 1.875rem);
         text-align: center;
+        max-width: 300px;
 
         color: var(--text-main);
     }
-
     &__wrapper {
         margin: 80px 0 0 0;
 
         display: grid;
-        // flex-direction: column;
         justify-content: center;
         gap: 80px;
-
-        // max-width: 400px;
     }
 
     &__item {
@@ -64,7 +65,7 @@
             font-size: clamp(1.25rem, 1.163rem + 0.43vw, 1.5rem);
             font-weight: 700;
             line-height: clamp(1.5rem, 1.413rem + 0.43vw, 1.75rem);
-            // text-align: left;
+            text-align: center;
         }
 
         button {
@@ -87,7 +88,6 @@
             cursor: pointer;
 
             transition: 0.3s;
-            // overflow: hidden;
         
             &:before {
                 content: "";
@@ -181,6 +181,19 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
+        &__title {
+            max-width: unset;
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
+    
+        &__subtitle {
+            max-width: unset;
+        }
         &__wrapper {
             gap: 40px;
             grid-template-columns: repeat(3, 1fr);
@@ -189,10 +202,14 @@
         }
         &__item {
             height: 100%;
+            max-width: unset;
         }
         &__item:last-child {
             grid-column: 2/4;
             max-width: unset;
+        }
+        &__item:last-child p {
+            text-align: start;
         }
     }
 }

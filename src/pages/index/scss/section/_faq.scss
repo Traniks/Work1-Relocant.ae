@@ -1,12 +1,12 @@
 .faq {
-    // margin: 40px 0 0 0;
 
     &__title {
         font-family: DAMN;
         font-weight: 400;
         margin: 0 auto 0 auto;
-        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
-        // line-height: 50px;
+
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -35,11 +35,9 @@
         position: absolute;
         top: -10px;
         right: 10px;
-        // transition: 0.5s;
         
         &_active {
             img {
-                // transition: 0.5s;
                 transform: rotate(180deg);
             }
         }
@@ -48,11 +46,9 @@
     &__box-title {
         font-size: clamp(1.25rem, 1.12rem + 0.65vw, 1.625rem);
         font-weight: 800;
-        // line-height: 20px;
 
         text-transform: uppercase;
         color: var(--text-main);
-        // cursor: pointer;
     }
 
     &__box-description {
@@ -63,7 +59,6 @@
 
         font-size: clamp(1.125rem, 1.038rem + 0.43vw, 1.375rem);
         font-weight: 400;
-        // line-height: 20px;
 
         color: var(--text-main);
         transition: 0.5s;
@@ -77,6 +72,14 @@
 
 @media(min-width: 1024px) {
     .faq {
+        &__titel {
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
         &__box {
             padding: 25px 60px;
             margin: 0 0 0 0;

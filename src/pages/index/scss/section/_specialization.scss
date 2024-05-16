@@ -3,12 +3,13 @@
 
     &__title {
         margin: 0 auto;
-        // max-width: 400px;
+        max-width: 300px;
 
         font-family: DAMN;
-        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         font-weight: 400;
-        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
+
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
 
         text-align: center;
         text-transform: uppercase;
@@ -19,7 +20,10 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
+
+            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
             color: #8A6857;
         }
     }
@@ -43,7 +47,6 @@
     &__item-title {
         font-size: clamp(1.625rem, 1.538rem + 0.43vw, 1.875rem);
         font-weight: 800;
-        // line-height: 20px;
 
         color: var(--text-main);
     }
@@ -110,7 +113,7 @@
     &__bottom-description {
         margin: 10px auto 0 auto;
 
-        max-width: 400px;
+        max-width: 300px;
 
         font-size: clamp(1.25rem, 0.989rem + 1.3vw, 2rem);
         font-weight: 800;
@@ -123,11 +126,19 @@
 }
 
 @media(min-width: 1024px) {
-    .specialization {        
+    .specialization {  
+        &__title {
+            max-width: unset;
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
         &__wrapper{
             gap: 60px;
         }
-
         &__item {
             margin: 0 0 0 0;
             padding: 5px 120px 5px 5px;

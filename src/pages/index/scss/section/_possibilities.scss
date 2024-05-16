@@ -1,12 +1,14 @@
 .possibilities {    
     &__title {
         margin: clamp(2.5rem, 1.196rem + 6.52vw, 6.25rem) auto 0 auto;
-        // max-width: 400px;
+        max-width: 300px;
 
         font-family: DAMN;
-        font-size: clamp(3.438rem, 2.024rem + 7.07vw, 7.5rem);
         font-weight: 400;
-        line-height: clamp(3.438rem, 2.242rem + 5.98vw, 6.875rem);
+
+        font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+        line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
         text-wrap: balance;
 
         text-align: center;
@@ -17,7 +19,10 @@
         span {
             font-family: DAMN;
             font-weight: 400;
-            font-size: clamp(3.75rem, 2.446rem + 6.52vw, 7.5rem);
+
+            font-size: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+            line-height: clamp(3.438rem, 3.011rem + 2.13vw, 4.375rem);
+
             color: #8A6857;
         }
     }
@@ -36,6 +41,8 @@
 
     &__box-title {
         font-family: DAMN;
+        max-width: 300px;
+        margin: 0 auto;
         font-size: clamp(3.125rem, 2.821rem + 1.52vw, 4rem);
         font-weight: 400;
         line-height: 40px;
@@ -64,6 +71,8 @@
     &__item-img {
         display: block;
         margin: 0 auto;
+        width: 46px;
+        height: 40px;
     }
 
     &__item-title {
@@ -88,14 +97,13 @@
         line-height: clamp(1.313rem, 1.204rem + 0.54vw, 1.625rem);
 
         text-align: center;
-        // text-wrap: balance;
 
         color: var(--text-main);
     }
 
     &__bottom {
         margin: clamp(2.375rem, 2.158rem + 1.09vw, 3rem) auto 0 auto;
-        max-width: 400px;
+        max-width: 300px;
 
         font-size: clamp(1.5rem, 1.326rem + 0.87vw, 2rem);
         font-weight: 800;
@@ -143,7 +151,6 @@
             }
 
             transition: 0.3s;
-            // overflow: hidden;
 
             &:before {
                 content: "";
@@ -185,6 +192,18 @@
         background: url("../../img//lite/bg-2.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        &__title {
+            max-width: unset;
+            font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            span {
+                font-size: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+                line-height: clamp(6.563rem, 1.108rem + 8.52vw, 7.5rem);
+            }
+        }
+        &__box-title {
+            max-width: unset;
+        }
         &__wrapper {
             gap: 70px;
         }
@@ -198,7 +217,7 @@
         }
         &__item {
             display: flex;
-            padding: 28px 10px 0 0;
+            padding: 28px 30px 28px 0;
             max-width: 100%;
             gap: 20px;
             align-items: start;
@@ -208,6 +227,8 @@
             background: rgba(209, 182, 123, 0.3);
             backdrop-filter: blur(20px);
             padding: 30px;
+            width: 100px;
+            height: 100px;
         }
         &__item-title {
             margin: 0;

@@ -17,6 +17,7 @@ export function modal() {
 	close('modal-tg');
 	close('modal-ws');
 	close('modal-zoom');
+	close('modal-thanks')
 	
 	// Для раскрытия номера
 	const bg = document.querySelector('.modal-call__bg');
